@@ -1,0 +1,14 @@
+# Tested with Python 3.12, CUDA 12.x, A100-80GB
+torch>=2.4          # torch.compile (COMPILE=1/2) and SDPA
+torchvision         # vision/
+numpy>=1.26
+tqdm
+pillow              # Tiny-ImageNet loading in vision/
+matplotlib          # plotting scripts
+transformers>=4.44  # tokenizers (Mistral-32k, bert-base-cased) and LlamaForCausalLM export
+sentencepiece       # Mistral tokenizer
+datasets            # WikiText-2/103 (lm_wt103/)
+requests            # SlimPajama direct download
+zstandard           # SlimPajama .jsonl.zst decompression
+lm-eval>=0.4        # lm-eval-harness evaluation
+accelerate

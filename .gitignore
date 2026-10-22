@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+data/
+ckpt/
+ckpt_*/
+hf_out/
+evals/
+logs/
+logs_*/
+*.pt
+*.bin
+*.log
+.pipep.lock
